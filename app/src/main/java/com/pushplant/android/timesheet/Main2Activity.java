@@ -198,25 +198,32 @@ public class Main2Activity extends FragmentActivity implements MonthlyFragment.O
 
             ls_arg1 = "";
             if((ls_indt.length()==14) & (ls_indt != null)) {
-                ls_arg1 = "출근[" + substring(ls_indt, 0, 4) + "-" + substring(ls_indt, 4, 6) + "-" + substring(ls_indt, 6, 8) + " " + substring(ls_indt, 8,10) + ":" + substring(ls_indt, 10, 12) + ":" + substring(ls_indt, 12, 14) + "]";
+//                ls_arg1 = "출근[" + substring(ls_indt, 0, 4) + "-" + substring(ls_indt, 4, 6) + "-" + substring(ls_indt, 6, 8) + " " + substring(ls_indt, 8,10) + ":" + substring(ls_indt, 10, 12) + ":" + substring(ls_indt, 12, 14) + "]";
+
+                ls_arg1 = " " + substring(ls_indt, 0, 4) + "-" + substring(ls_indt, 4, 6) + "-" + substring(ls_indt, 6, 8) + " " + substring(ls_indt, 8,10) + ":" + substring(ls_indt, 10, 12) + ":" + substring(ls_indt, 12, 14) + " ";
 
 
             }else{
-                ls_arg1 = "출근[" +ls_indt + "]";
+//                ls_arg1 = "출근[" +ls_indt + "]";
+                ls_arg1 = "" +ls_indt + "";
             }
 
             ls_arg2 = "";
             if(ls_outdt != null) {
                 if ((ls_outdt.length() == 14) & (ls_outdt != null)) {
-                    ls_arg2 = "퇴근[" + substring(ls_outdt, 0, 4) + "-" + substring(ls_outdt, 4, 6) + "-" + substring(ls_outdt, 6, 8) + " " + substring(ls_outdt, 8, 10) + ":" + substring(ls_outdt, 10, 12) + ":" + substring(ls_outdt, 12, 14) + "]";
+//                    ls_arg2 = "퇴근[" + substring(ls_outdt, 0, 4) + "-" + substring(ls_outdt, 4, 6) + "-" + substring(ls_outdt, 6, 8) + " " + substring(ls_outdt, 8, 10) + ":" + substring(ls_outdt, 10, 12) + ":" + substring(ls_outdt, 12, 14) + "]";
+
+                    ls_arg2 = " " + substring(ls_outdt, 0, 4) + "-" + substring(ls_outdt, 4, 6) + "-" + substring(ls_outdt, 6, 8) + " " + substring(ls_outdt, 8, 10) + ":" + substring(ls_outdt, 10, 12) + ":" + substring(ls_outdt, 12, 14) + " ";
                 } else {
-                    ls_arg1 = "퇴근[" + ls_outdt + "]";
+//                    ls_arg1 = "퇴근[" + ls_outdt + "]";
+
+                    ls_arg1 = " " + ls_outdt + " ";
                 }
             }
 
             ls_arg3 = "";
             if(ls_WORKTIME != null) {
-                ls_arg3 = "" + ls_WORKTIME + " 시간";
+                ls_arg3 = "" + ls_WORKTIME + " hr";
             }else{
                 ls_arg3 = "0 시간";
             }

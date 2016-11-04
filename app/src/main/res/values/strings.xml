@@ -4,9 +4,6 @@
     <string name="hello_world">Hello world!</string>
 
 
-
-
-
     <string name="weather_icon">Weather icon</string>
     <string name="event_icon">Event icon</string>
     <string name="add_thing">일정추가</string>
